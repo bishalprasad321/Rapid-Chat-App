@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "18939609885",
+    "project_id": "rapid-chat-810a3",
+    "storage_bucket": "rapid-chat-810a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18939609885:android:bb8d757d465c254d1617f4",
+        "android_client_info": {
+          "package_name": "com.bishal.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18939609885-qop1983kebfnsaao4djqfpm128b6mtpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9si3P6XpbwSbnWnuBiwcT1om7M7zmsOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18939609885-qop1983kebfnsaao4djqfpm128b6mtpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
