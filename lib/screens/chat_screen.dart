@@ -42,7 +42,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black87,
       appBar: AppBar(
         leading: null,
         actions: <Widget>[
@@ -54,7 +54,7 @@ class _ChatScreenState extends State<ChatScreen> {
               }),
         ],
         title: const Text('⚡️Chat'),
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.black26,
       ),
       body: SafeArea(
         child: Column(
@@ -75,11 +75,14 @@ class _ChatScreenState extends State<ChatScreen> {
                       },
                       decoration: kMessageTextFieldDecoration,
                       style: const TextStyle(
-                        color: Colors.black87,
+                        color: Colors.white,
                       ),
                     ),
                   ),
                   ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),
+                    ),
                     onPressed: () {
                       messageChatController.clear();
                       // chatText | loggedInUser.email
@@ -88,9 +91,9 @@ class _ChatScreenState extends State<ChatScreen> {
                         'sender': loggedInUser.email,
                       });
                     },
-                    child: const Text(
-                      'Send',
-                      style: kSendButtonTextStyle,
+                    child: const Icon(
+                      Icons.send,
+                      color: Colors.black87,
                     ),
                   ),
                 ],
@@ -171,7 +174,7 @@ class MessageBubble extends StatelessWidget {
             sender,
             style: const TextStyle(
               fontSize: 12.0,
-              color: Colors.black54,
+              color: Colors.white70,
             ),
           ),
           Material(
@@ -185,14 +188,14 @@ class MessageBubble extends StatelessWidget {
                     bottomLeft: Radius.circular(30.0),
                     bottomRight: Radius.circular(30.0)),
             elevation: 5.0,
-            color: isMe ? Colors.lightBlueAccent : Colors.white,
+            color: isMe ? Colors.amber: Colors.white54,
             child: Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
               child: Text(
                 chat,
                 style: TextStyle(
-                  color: isMe ? Colors.white : Colors.black54,
+                  color: isMe? Colors.black87 : Colors.white,
                   fontSize: 15.0,
                 ),
               ),

@@ -11,12 +11,12 @@ const kMessageTextFieldDecoration = InputDecoration(
   hintText: 'Type your message here...',
   border: InputBorder.none,
   hintStyle: TextStyle(
-    color: Colors.black54
+    color: Colors.white54
   )
 );
 
 const kMessageContainerDecoration = BoxDecoration(
   border: Border(
-    top: BorderSide(color: Colors.lightBlueAccent, width: 2.0),
+    top: BorderSide(color: Colors.amber, width: 2.0),
   ),
 );
